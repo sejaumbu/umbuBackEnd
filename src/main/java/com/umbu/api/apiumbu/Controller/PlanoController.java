@@ -1,24 +1,23 @@
 package com.umbu.api.apiumbu.Controller;
-import com.umbu.api.apiumbu.Model.Umchat;
-import com.umbu.api.apiumbu.Repository.UmchatRepository;
+
+import com.umbu.api.apiumbu.Model.Plano;
+import com.umbu.api.apiumbu.Repository.PlanoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
+import java.util.*;
 @RestController
-@RequestMapping("/umchat")
-public class UmchatController {
-
+@RequestMapping("/plano")
+public class PlanoController {
     @Autowired
-    UmchatRepository dbConnection;
+    PlanoRepository dbConnection;
 
     @CrossOrigin
     @GetMapping("/")
-    public List<Umchat> findAllRecords() {
+    public List<Plano> findAllRecords() {
         return dbConnection.findAll();
     }
 }

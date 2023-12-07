@@ -4,13 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-import java.util.Date;
+import java.util.*;
 @Entity
 @Table(schema = "umchat")
 public class Umchat {
+
     @Id
     Integer idumchat;
-    String menssagem;
+    String mensagem;
     Date datahora;
 
     public Integer getIdumchat() {
@@ -21,12 +22,12 @@ public class Umchat {
         this.idumchat = idumchat;
     }
 
-    public String getMenssagem() {
-        return menssagem;
+    public String getMensagem() {
+        return mensagem;
     }
 
-    public void setMenssagem(String menssagem) {
-        this.menssagem = menssagem;
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
     }
 
     public Date getDatahora() {
@@ -36,4 +37,5 @@ public class Umchat {
     public void setDatahora(Date datahora) {
         this.datahora = datahora;
     }
+
 }
