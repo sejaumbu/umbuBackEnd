@@ -1,7 +1,7 @@
-package com.umbu.api.apiumbu.Controller;
+package com.sejaumbu.umbu.controller;
 
-import com.umbu.api.apiumbu.Model.Plano;
-import com.umbu.api.apiumbu.Repository.PlanoRepository;
+import com.sejaumbu.umbu.models.Plano;
+import com.sejaumbu.umbu.repository.PlanoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
 @RestController
-@RequestMapping("/plano")
+@RequestMapping("/planos")
 public class PlanoController {
     @Autowired
     PlanoRepository dbConnection;

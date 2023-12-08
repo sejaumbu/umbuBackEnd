@@ -1,4 +1,4 @@
-package com.umbu.api.apiumbu.Model;
+package com.sejaumbu.umbu.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

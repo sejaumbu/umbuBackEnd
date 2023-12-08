@@ -1,6 +1,6 @@
-package com.umbu.api.apiumbu.Repository;
+package com.sejaumbu.umbu.repository;
 
-import com.umbu.api.apiumbu.Model.Umchat;
+import com.sejaumbu.umbu.models.Umchat;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
