@@ -1,5 +1,6 @@
 package com.umbu.api.apiumbu.Model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -10,8 +11,10 @@ import java.util.*;
 public class Jardineiro {
     @Id
     Integer idjardineiro;
-    Integer plano_idplano;
-    Integer usuario_idusuario;
+    @Column(name = "plano_idplano")
+    Integer planoIdPlano;
+    @Column(name = "usuario_idusuario")
+    Integer usuarioIdUsuario;
     String nome;
 
     public Integer getIdjardineiro() {
@@ -22,20 +25,20 @@ public class Jardineiro {
         this.idjardineiro = idjardineiro;
     }
 
-    public Integer getPlano_idplano() {
-        return plano_idplano;
+    public Integer getPlanoIdPlano() {
+        return planoIdPlano;
     }
 
-    public void setPlano_idplano(Integer plano_idplano) {
-        this.plano_idplano = plano_idplano;
+    public void setPlanoIdPlano(Integer planoIdPlano) {
+        this.planoIdPlano = planoIdPlano;
     }
 
-    public Integer getUsuario_idusuario() {
-        return usuario_idusuario;
+    public Integer getUsuarioIdUsuario() {
+        return usuarioIdUsuario;
     }
 
-    public void setUsuario_idusuario(Integer usuario_idusuario) {
-        this.usuario_idusuario = usuario_idusuario;
+    public void setUsuarioIdUsuario(Integer usuarioIdUsuario) {
+        this.usuarioIdUsuario = usuarioIdUsuario;
     }
 
     public String getNome() {

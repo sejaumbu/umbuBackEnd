@@ -1,5 +1,6 @@
 package com.umbu.api.apiumbu.Model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -11,6 +12,7 @@ import java.util.*;
 public class Trabalho {
    @Id
    Integer idtrabalho;
+   @Column(name = "jardineiro_idjardineiro")
    Integer jardineiro_idjardineiro;
    String descricao;
    Date data;
