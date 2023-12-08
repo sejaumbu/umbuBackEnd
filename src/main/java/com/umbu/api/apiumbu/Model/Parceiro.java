@@ -11,8 +11,7 @@ public class Parceiro {
     @Id
     Integer idparceiro;
     String descricao;
-    @Column(name = "url_vitrine")
-    String urlVitrine;
+    String url_vitrine;
 
     public Integer getIdparceiro() {
         return idparceiro;
@@ -30,11 +29,11 @@ public class Parceiro {
         this.descricao = descricao;
     }
 
-    public String getUrlVitrine() {
-        return urlVitrine;
+    public String getUrl_vitrine() {
+        return url_vitrine;
     }
 
-    public void setUrlVitrine(String urlVitrine) {
-        this.urlVitrine = urlVitrine;
+    public void setUrl_vitrine(String url_vitrine) {
+        this.url_vitrine = url_vitrine;
     }
 }
