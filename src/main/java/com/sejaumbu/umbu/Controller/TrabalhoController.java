@@ -1,7 +1,7 @@
-package com.umbu.api.apiumbu.Controller;
+package com.sejaumbu.umbu.Controller;
 
-import com.umbu.api.apiumbu.Model.Trabalho;
-import com.umbu.api.apiumbu.Repository.TrabalhoRepository;
+import com.sejaumbu.umbu.Model.Trabalho;
+import com.sejaumbu.umbu.Repository.TrabalhoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

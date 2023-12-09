@@ -1,6 +1,6 @@
-package com.umbu.api.apiumbu.Repository;
+package com.sejaumbu.umbu.Repository;
 
-import com.umbu.api.apiumbu.Model.Parceiro;
+import com.sejaumbu.umbu.Model.Parceiro;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

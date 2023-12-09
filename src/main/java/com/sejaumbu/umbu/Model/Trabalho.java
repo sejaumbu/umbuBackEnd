@@ -1,4 +1,4 @@
-package com.umbu.api.apiumbu.Model;
+package com.sejaumbu.umbu.Model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ public class Trabalho {
    @Id
    Integer idtrabalho;
    @Column(name = "jardineiro_idjardineiro")
-   Integer jardineiro_idjardineiro;
+   Integer jardineiroIdJardineiro;
    String descricao;
    Date data;
 
@@ -25,12 +25,12 @@ public class Trabalho {
         this.idtrabalho = idtrabalho;
     }
 
-    public Integer getJardineiro_idjardineiro() {
-        return jardineiro_idjardineiro;
+    public Integer getJardineiroIdJardineiro() {
+        return jardineiroIdJardineiro;
     }
 
-    public void setJardineiro_idjardineiro(Integer jardineiro_idjardineiro) {
-        this.jardineiro_idjardineiro = jardineiro_idjardineiro;
+    public void setJardineiroIdJardineiro(Integer jardineiroIdJardineiro) {
+        this.jardineiroIdJardineiro = jardineiroIdJardineiro;
     }
 
     public String getDescricao() {

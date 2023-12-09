@@ -1,7 +1,7 @@
-package com.umbu.api.apiumbu.Controller;
+package com.sejaumbu.umbu.Controller;
 
-import com.umbu.api.apiumbu.Model.Jardineiro;
-import com.umbu.api.apiumbu.Repository.JardineiroRepository;
+import com.sejaumbu.umbu.Model.Jardineiro;
+import com.sejaumbu.umbu.Repository.JardineiroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

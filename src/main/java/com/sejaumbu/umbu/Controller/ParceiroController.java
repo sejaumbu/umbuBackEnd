@@ -1,25 +1,24 @@
-package com.umbu.api.apiumbu.Controller;
+package com.sejaumbu.umbu.Controller;
 
-import com.umbu.api.apiumbu.Model.Usuario;
-import com.umbu.api.apiumbu.Repository.UsuarioRepository;
+import com.sejaumbu.umbu.Model.Parceiro;
+import com.sejaumbu.umbu.Repository.ParceiroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import java.util.*;
 
 @RestController
-@RequestMapping("/usuario")
-public class UsuarioController {
-
+@RequestMapping("/parceiro")
+public class ParceiroController {
     @Autowired
-    UsuarioRepository dbConnection;
+    ParceiroRepository dbConnection;
 
     @CrossOrigin
     @GetMapping("/")
-    public List<Usuario>findAllRecords() {
+    public List<Parceiro> findAllRecords(){
         return dbConnection.findAll();
     }
 }
