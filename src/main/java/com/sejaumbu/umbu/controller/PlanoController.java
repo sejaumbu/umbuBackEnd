@@ -1,12 +1,10 @@
 package com.sejaumbu.umbu.controller;
 
+import com.sejaumbu.umbu.models.Jardineiro;
 import com.sejaumbu.umbu.models.Plano;
 import com.sejaumbu.umbu.repository.PlanoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 @RestController
@@ -14,6 +12,16 @@ import java.util.*;
 public class PlanoController {
     @Autowired
     PlanoRepository dbConnection;
+
+    @PostMapping("/cadastrar")
+    public Plano cadastrarNovoPlano(@RequestBody Plano novoPlano) {
+        return dbConnection.save(novoPlano);
+    }
+
+    @PutMapping("/alterar")
+    public Plano alterarPlano(@RequestBody Plano planoAlterado) {
+        return dbConnection.save(planoAlterado);
+    }
 
     @CrossOrigin
     @GetMapping("/")

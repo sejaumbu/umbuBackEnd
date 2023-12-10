@@ -4,10 +4,7 @@ package com.sejaumbu.umbu.controller;
 import com.sejaumbu.umbu.models.Avaliacao;
 import com.sejaumbu.umbu.repository.AvaliacaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,6 +15,16 @@ public class AvaliacaoController {
 
     @Autowired
     AvaliacaoRepository dbConector;
+
+    @PostMapping("/avaliar")
+    public Avaliacao informarAvaliacao(@RequestBody Avaliacao novaAvaliacao) {
+        return dbConector.save(novaAvaliacao);
+    }
+
+    @PutMapping("/alterar")
+    public Avaliacao alterarAvaliacao(@RequestBody Avaliacao avaliacaoAlterada) {
+        return dbConector.save(avaliacaoAlterada);
+    }
 
     @CrossOrigin //Para evitar o erro de CORS
     @GetMapping("/")

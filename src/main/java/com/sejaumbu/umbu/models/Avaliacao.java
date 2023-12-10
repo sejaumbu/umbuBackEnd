@@ -13,8 +13,6 @@ import java.util.List;
 @Table(schema = "avaliacao")
 public class Avaliacao {
 
-
-
     @Id
     Integer idavaliacao;
 

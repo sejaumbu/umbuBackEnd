@@ -1,6 +1,6 @@
-package com.sejaumbu.umbu.Repository;
+package com.sejaumbu.umbu.repository;
 
-import com.sejaumbu.umbu.Model.Jardineiro;
+import com.sejaumbu.umbu.models.Jardineiro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

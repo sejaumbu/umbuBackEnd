@@ -1,12 +1,10 @@
-package com.sejaumbu.umbu.Controller;
+package com.sejaumbu.umbu.controller;
 
-import com.sejaumbu.umbu.Model.Parceiro;
-import com.sejaumbu.umbu.Repository.ParceiroRepository;
+import com.sejaumbu.umbu.models.Jardineiro;
+import com.sejaumbu.umbu.models.Parceiro;
+import com.sejaumbu.umbu.repository.ParceiroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -16,6 +14,15 @@ public class ParceiroController {
     @Autowired
     ParceiroRepository dbConnection;
 
+    @PostMapping("/cadastrar")
+    public Parceiro novoParceiro(@RequestBody Parceiro novoParceiro) {
+        return dbConnection.save(novoParceiro);
+    }
+
+    @PutMapping("/alterar")
+    public Parceiro alterarParceiro(@RequestBody Parceiro parceiroAlterado) {
+        return dbConnection.save(parceiroAlterado);
+    }
     @CrossOrigin
     @GetMapping("/")
     public List<Parceiro> findAllRecords(){

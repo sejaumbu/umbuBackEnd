@@ -1,4 +1,4 @@
-package com.sejaumbu.umbu.Model;
+package com.sejaumbu.umbu.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
