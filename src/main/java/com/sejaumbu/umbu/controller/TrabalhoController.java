@@ -1,12 +1,10 @@
-package com.sejaumbu.umbu.Controller;
+package com.sejaumbu.umbu.controller;
 
-import com.sejaumbu.umbu.Model.Trabalho;
-import com.sejaumbu.umbu.Repository.TrabalhoRepository;
+import com.sejaumbu.umbu.models.Jardineiro;
+import com.sejaumbu.umbu.models.Trabalho;
+import com.sejaumbu.umbu.repository.TrabalhoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,6 +13,16 @@ import java.util.List;
 public class TrabalhoController {
     @Autowired
     TrabalhoRepository dbConnection;
+
+    @PostMapping("/cadastrar")
+    public Trabalho cadastrarTrabalho(@RequestBody Trabalho novoTrabalho) {
+        return dbConnection.save(novoTrabalho);
+    }
+
+    @PutMapping("/alterar")
+    public Trabalho alterarTrabalho(@RequestBody Trabalho trabalhoAlterado) {
+        return dbConnection.save(trabalhoAlterado);
+    }
     @CrossOrigin
     @GetMapping("/")
     public List<Trabalho> findAllRecords() {

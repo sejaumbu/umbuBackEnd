@@ -1,12 +1,10 @@
-package com.sejaumbu.umbu.Controller;
+package com.sejaumbu.umbu.controller;
 
-import com.sejaumbu.umbu.Model.Usuario;
-import com.sejaumbu.umbu.Repository.UsuarioRepository;
+import com.sejaumbu.umbu.models.Jardineiro;
+import com.sejaumbu.umbu.models.Usuario;
+import com.sejaumbu.umbu.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,6 +14,16 @@ public class UsuarioController {
 
     @Autowired
     UsuarioRepository dbConnection;
+
+    @PostMapping("/cadastrar")
+    public Usuario cadastrarUsuario(@RequestBody Usuario novoUsuario) {
+        return dbConnection.save(novoUsuario);
+    }
+
+    @PutMapping("/alterar")
+    public Usuario alterarUsuario(@RequestBody Usuario usuarioAlterado) {
+        return dbConnection.save(usuarioAlterado);
+    }
 
     @CrossOrigin
     @GetMapping("/")
