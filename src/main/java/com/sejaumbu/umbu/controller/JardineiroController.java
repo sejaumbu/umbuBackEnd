@@ -1,14 +1,11 @@
 package com.sejaumbu.umbu.controller;
 
-import com.sejaumbu.umbu.models.Avaliacao;
 import com.sejaumbu.umbu.models.Jardineiro;
 import com.sejaumbu.umbu.repository.JardineiroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.chrono.JapaneseDate;
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/jardineiro")

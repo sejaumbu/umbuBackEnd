@@ -1,9 +1,6 @@
 package com.sejaumbu.umbu.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import javax.xml.validation.Schema;
 import java.util.Date;
@@ -11,19 +8,20 @@ import java.util.Date;
 @Table(schema = "usuario")
 public class Usuario {
     @Id
-    Integer idusuario;
-    String nome;
-    Integer endereco;
-    String telefone;
-    String email;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idusuario;
+    public String nome;
+    private Integer endereco;
+    private String telefone;
+    private String email;
     @Column(name = "data_nascimento")
-    Date dataNascimento;
-    String cpf;
+    private Date dataNascimento;
+    private String cpf;
     @Column(name = "data_registro")
-    Date dataRegistro;
-    String historico;
-    String preferencias;
-    String senha;
+    private Date dataRegistro;
+    private String historico;
+    private String preferencias;
+    private String senha;
 
     public Integer getIdusuario() {
         return idusuario;
@@ -112,4 +110,5 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
 }

@@ -5,17 +5,16 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-import java.util.*;
 @Entity
 @Table(schema = "jardineiro")
 public class Jardineiro {
     @Id
-    Integer idjardineiro;
+    private Integer idjardineiro;
     @Column(name = "plano_idplano")
-    Integer planoIdPlano;
+    private Integer planoIdPlano;
     @Column(name = "usuario_idusuario")
-    Integer usuarioIdUsuario;
-    String nome;
+    private Integer usuarioIdUsuario;
+    private String nome;
 
     public Integer getIdjardineiro() {
         return idjardineiro;

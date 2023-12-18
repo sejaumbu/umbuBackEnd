@@ -9,10 +9,10 @@ import jakarta.persistence.Table;
 @Table(schema = "parceiro")
 public class Parceiro {
     @Id
-    Integer idparceiro;
-    String descricao;
+    private Integer idparceiro;
+    public String descricao;
     @Column(name = "url_vitrine")
-    String urlVitrine;
+    public String urlVitrine;
 
     public Integer getIdparceiro() {
         return idparceiro;

@@ -10,9 +10,9 @@ import java.util.*;
 @Table(schema = "plano")
 public class Plano {
     @Id
-    Integer idplano;
-    String tipo;
-    Float preco;
+    private Integer idplano;
+    private String tipo;
+    public Float preco;
 
     public Integer getIdplano() {
         return idplano;
