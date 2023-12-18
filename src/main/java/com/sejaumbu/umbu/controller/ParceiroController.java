@@ -1,6 +1,5 @@
 package com.sejaumbu.umbu.controller;
 
-import com.sejaumbu.umbu.models.Jardineiro;
 import com.sejaumbu.umbu.models.Parceiro;
 import com.sejaumbu.umbu.repository.ParceiroRepository;
 import org.springframework.beans.factory.annotation.Autowired;

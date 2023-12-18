@@ -1,6 +1,5 @@
 package com.sejaumbu.umbu.controller;
 
-import com.sejaumbu.umbu.models.Jardineiro;
 import com.sejaumbu.umbu.models.Umchat;
 import com.sejaumbu.umbu.repository.UmchatRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -10,9 +10,9 @@ import java.util.*;
 public class Umchat {
 
     @Id
-    Integer idumchat;
-    String mensagem;
-    Date datahora;
+    private Integer idumchat;
+    private String mensagem;
+    private Date datahora;
 
     public Integer getIdumchat() {
         return idumchat;

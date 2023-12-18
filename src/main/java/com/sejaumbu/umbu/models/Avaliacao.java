@@ -1,30 +1,27 @@
 package com.sejaumbu.umbu.models;
 
-
-import com.sejaumbu.umbu.repository.AvaliacaoRepository;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.util.Date;
-import java.util.List;
 
 @Entity //Mostra ao SPRING que é uma tabela
 @Table(schema = "avaliacao")
 public class Avaliacao {
 
     @Id
-    Integer idavaliacao;
+    private Integer idavaliacao;
 
     @Column(name = "jardineiro_idjardineiro")
-    Integer jardineiroIdJardineiro;
+    private Integer jardineiroIdJardineiro;
 
-    String comentario;
+    private String comentario;
 
-    Float nota;
+    private Float nota;
 
     @Column(name = "data_2")
-    Date data2;
+    private Date data2;
 
     public Integer getIdavaliacao() {
         return idavaliacao;

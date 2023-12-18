@@ -11,11 +11,11 @@ import java.util.*;
 @Table(schema = "trabalho")
 public class Trabalho {
    @Id
-   Integer idtrabalho;
+   private Integer idtrabalho;
    @Column(name = "jardineiro_idjardineiro")
-   Integer jardineiroIdJardineiro;
-   String descricao;
-   Date data;
+   private Integer jardineiroIdJardineiro;
+   public String descricao;
+   public Date data;
 
     public Integer getIdtrabalho() {
         return idtrabalho;
