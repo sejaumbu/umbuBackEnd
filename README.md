@@ -5,8 +5,7 @@ Bem-vindo ao repositório do backend da UMBU, a plataforma revolucionária que c
 Este repositório contém o código-fonte do backend da UMBU, desenvolvido em Java Spring Boot. Aqui, você encontrará detalhes sobre a implementação, a estrutura do projeto e as dependências necessárias para executar com sucesso a plataforma.
 
 ### Declarando dependências
-
-!["C:\Users\Aluno\OneDrive - SENAC - SP\Imagens\Capturas de tela\imgReadme\Captura de tela 2023-12-18 205513.png"]
+ <img src="./assets/spring1.png">
 
 ## Estrutura do Projeto:
 
