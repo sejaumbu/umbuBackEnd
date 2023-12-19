@@ -363,9 +363,58 @@ Essa estrutura facilita a separação de responsabilidades, tornando o código m
 
 ### Requisições:
 
+As requisições GET, POST e PUT são métodos HTTP (Hypertext Transfer Protocol) usados para realizar diferentes tipos de operações em um servidor. Cada um desses métodos tem um propósito específico, e sua escolha depende do tipo de interação desejada com o recurso no servidor.
+
+1. GET (Obter):
+
+Propósito: Solicita a recuperação de dados de um recurso específico no servidor.
+Características Principais:
+Não tem um corpo de mensagem no pedido.
+Os parâmetros são geralmente anexados à URL (por exemplo, em consultas).
+É uma operação "segura", o que significa que não deve alterar o estado do servidor.
+
+Exemplo:
+
+```GET
+localhost:8080/usuario/
+```
+
+2. POST (Enviar):
+
+Propósito: Submete dados para serem processados a um recurso especificado.
+Características Principais:
+Pode incluir um corpo de mensagem contendo dados a serem processados.
+É usado para criar um novo recurso no servidor ou realizar uma operação que pode causar uma mudança de estado no servidor.
+Não é considerado seguro, pois pode alterar o estado do servidor.
+
+Exemplo:
+
+```POST
+localhost:8080/usuario/cadastrar
+```
+
+3. PUT (Atualizar):
+
+Propósito: Substitui todas as representações atuais do recurso de destino pelos dados enviados na solicitação.
+Características Principais:
+Geralmente usado para atualizar um recurso existente no servidor.
+O corpo da mensagem contém os dados atualizados do recurso.
+Se o recurso não existir, pode criar um novo recurso com os dados fornecidos.
+Pode ser usado para criar ou atualizar um recurso.
+
+Exemplo:
+
+```PUT
+localhost:8080/usuario/alterar
+```
+
+Existem outros métodos HTTP, como DELETE, PATCH, OPTIONS, entre outros, cada um com seu propósito específico.
+O uso correto dos métodos HTTP é fundamental para seguir os princípios e as melhores práticas da arquitetura RESTful (Representational State Transfer).
+
 Vamos falar sobre as principais requisições do projeto, com foco nos endpoints definidos no UsuarioController, explicando a finalidade de cada um:
 
 Requisições no UsuarioController
+
 1. **Listar Usuários (GET /usuario/listar) ou (GET /usuario/):**
 
 Descrição: Endpoint para recuperar a lista de todos os usuários cadastrados.
@@ -380,3 +429,4 @@ Propósito: Permitir que novos usuários se registrem na UMBU, fornecendo inform
 
 Descrição: Endpoint para alterar as informações de um usuário existente.
 Propósito: Possibilitar a atualização de dados de um usuário, como mudança de senha, atualização de preferências, etc.
+
