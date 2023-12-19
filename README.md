@@ -6,6 +6,8 @@ Este repositório contém o código-fonte do backend da UMBU, desenvolvido em Ja
 
 ### Declarando dependências
  <img src="./assets/spring1.png">
+ <img src="./assets/spring2.png">
+ <img src="./assets/spring3.png">
 
 ## Estrutura do Projeto:
 
@@ -19,7 +21,7 @@ A estrutura do projeto segue as convenções do Spring Boot e está organizada d
 
 ### Dependências utilizadas:
 
-!["C:\Users\Aluno\OneDrive - SENAC - SP\Imagens\Capturas de tela\imgReadme\Captura de tela 2023-12-18 205750.png""]
+<img src="./assets/spring4.png">
 
 1. **MySQL Driver:**
 
