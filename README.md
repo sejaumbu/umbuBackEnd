@@ -6,7 +6,6 @@ Este repositório contém o código-fonte do backend da UMBU, desenvolvido em Ja
 
 ### Declarando dependências
  <img src="./assets/spring1.png">
- <img src="./assets/spring2.png">
  <img src="./assets/spring3.png">
 
 ## Estrutura do Projeto:
